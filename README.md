@@ -1,5 +1,8 @@
 # Currículo - Karen Alexandra Marques
 
+[🌐 Acesse meu Currículo Online](https://k-marques.github.io/curriculo/)
+
+
 Bem-vindo ao meu portfólio digital! Este repositório contém meu **currículo online**, com informações acadêmicas, habilidades técnicas e certificados.
 
 ---
