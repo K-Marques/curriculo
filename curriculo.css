@@ -1,0 +1,221 @@
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #8b5cf6;
+  --accent-color: #ff6bcb;
+  --bg-color: #f8f9fc;
+  --card-bg: #ffffff;
+  --text-color: #0b1a36;
+  --radius: 12px;
+  --transition: 0.3s ease;
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--accent-color)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header .title {
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+header .contact-info span {
+  display: inline-block;
+  margin: 4px 10px;
+  font-size: 0.9rem;
+}
+
+header .contact-info a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Seções */
+.section {
+  background: var(--card-bg);
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: background var(--transition), transform var(--transition);
+}
+
+.section:hover {
+  transform: translateY(-2px);
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+/* Skills */
+.skills span,
+.soft-skills span {
+  display: inline-block;
+  margin: 5px 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(79, 70, 229, 0.1);
+  font-weight: 600;
+  color: var(--text-color);
+  transition: background var(--transition);
+}
+
+.skills span:hover,
+.soft-skills span:hover {
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--accent-color)
+  );
+  color: #fff;
+}
+
+:root {
+  /* Tema escuro (padrão) */
+  --bg: #0b1a36;
+  --card-bg: #12254d;
+  --text-color: #e6eef8;
+  --accent1: #4f46e5;
+  --accent2: #8b5cf6;
+  --accent3: #ff6bcb;
+  --radius: 16px;
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  --transition: 0.3s ease;
+}
+
+/* Tema claro */
+.light {
+  --bg: #f0f8ff;
+  --card-bg: #ffffff;
+  --text-color: #0b1a36;
+}
+
+/* Aplicando variáveis */
+body {
+  background-color: var(--bg);
+  color: var(--text-color);
+  font-family: var(--font-sans);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: background var(--transition);
+}
+
+/* Gradiente nos títulos */
+h1,
+h2 {
+  background: linear-gradient(
+    90deg,
+    var(--accent1),
+    var(--accent2),
+    var(--accent3)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  font-weight: 700;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 12px;
+  transition: background 0.25s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1); /* efeito hover */
+}
+
+#curriculo {
+  background-color: var(--dark-card);
+  color: var(--dark-text);
+  border-radius: var(--radius);
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.curriculo-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.curriculo-foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent1);
+}
+
+.curriculo-info h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.curriculo-info p {
+  margin: 4px 0;
+}
+
+.curriculo-info a {
+  color: var(--accent2);
+  text-decoration: none;
+}
+
+.curriculo-info a:hover {
+  text-decoration: underline;
+}
