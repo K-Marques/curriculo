@@ -1,2 +1,1 @@
-# curriculo
-Currículo profissional
+#Currículo-profissional
